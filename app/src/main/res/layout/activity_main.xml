@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#fcfaed"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前分数：" />
+
+        <TextView
+            android:id="@+id/tv_currentscore"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:paddingLeft="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最高分数：" />
+
+        <TextView
+            android:id="@+id/tv_topscore"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnrestart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f5eac1"
+            android:text="重新开始"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btnquit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f5eac1"
+            android:text="退出游戏"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btnhelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f5eac1"
+            android:text="游戏帮助"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+    <com.example.a2048test.GameView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </com.example.a2048test.GameView>
+</LinearLayout>
+
+
+
